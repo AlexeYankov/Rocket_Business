@@ -1,9 +1,4 @@
 const files = [
-    "./common/addElement.js",
-    "./common/completeTask.js",
-    "./common/selectAllTasks.js",
-    "./common/deleteTask.js",
-    "./common/restoreTask.js",
     "./common/basket.js",
     
 ];
