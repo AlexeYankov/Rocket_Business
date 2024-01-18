@@ -1,0 +1,145 @@
+.checkUp__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkUp__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 100px;
+    padding-bottom: 90px;
+    
+    max-width: 1140px;
+    width: 100%;
+}
+
+.checkUp__slider {
+    background-image: url('../../../asserts/checkup_background.png');
+    object-fit: cover;
+    height: 440px;
+    max-width: 1140px;
+}
+
+.checkUp__slider__description {
+    padding-left: 63px;
+    padding-top: 53px;
+}
+
+.checkUp__slider__description h3 {
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.checkUp__slider__description strong {
+    font-size: 22px;
+}
+
+.checkUp__options {
+    padding-top: 15px;
+    padding-bottom: 33px;
+}
+
+.checkUp__option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 25px;
+
+    gap: 10px;
+    pointer-events: none;
+}
+
+.checkUp__option::before {
+    content: url('../../../asserts/checkup_markup.png');
+}
+
+.checkUp__slider__price {
+    font-size: 20px;
+}
+
+.checkUp__slider__price-old {
+    text-decoration: line-through;
+    padding-left: 16px;
+}
+
+.checkUp__slider__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 15px;
+    padding-top: 26px;
+}
+
+.checkUp__slider__contacts__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 23px;
+    border-radius: 50px;
+    border: none;
+    letter-spacing: 0.6px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+
+    width: 196px;
+
+    cursor: pointer;
+}
+
+.solid__color {
+    background-color: var(--light-green);
+    color: white;
+}
+
+.solid__color:hover {
+    background-color: var(--accent-light);
+    transition: 0.2s ease-in-out;
+}
+
+.checkUp__slider__contacts__outlined {
+    background: transparent;
+    color: var(--light-green);
+    border: 1px solid var(--light-green);
+}
+
+.checkUp__slider__contacts__outlined:hover {
+    background-color: var(--light-green);
+    color: white;
+    transition: 0.2s ease-in-out
+}
+
+.checkUp__slider__control__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 34px;
+
+    gap: 36px;
+}
+
+.checkUp__slider__control__container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.checkUp__slider__arrow__rotated {
+    transform: rotate(180deg);
+}
+
+.checkUp__slider__control__container button:hover img {
+    content: url('../../../asserts/left-arrow-solid.png');
+}

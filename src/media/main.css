@@ -1,1 +1,10 @@
 @import url("./global.css");
+
+@import url("./desktop/headerDesktop.css");
+@import url("./desktop/promoDesktop.css");
+@import url("./desktop/checkUpDesktop.css");
+@import url("./desktop/footerDesktop.css");
+
+@import url("./tablet/headerTablet.css");
+
+@import url("./mobile/headerMobile.css");

@@ -1,0 +1,37 @@
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 144px;
+    background-color: var(--dark-green);
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    max-width: 1140px;
+}
+
+.footer__wrapper img {
+    cursor: pointer;
+}
+
+.footer__menu {
+    color: white;
+    letter-spacing: 1.2px;
+
+    gap: 30px;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+@media screen and (max-width: 770px) {
+    
+
+    
+
+}
+
+@media screen and (max-width: 570px) {
+    .header__container__contacts-container label::before {
+        display: none;
+    }
+
+    .header__container__contacts-container label {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .header__container__contacts-container {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .header__container__contacts-container span {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

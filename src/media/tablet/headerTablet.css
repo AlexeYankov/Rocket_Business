@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px) {
+    .header__container__logo {
+        padding: 0px 20px;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .header__container__logo-description,
+    .header__container__contacts-container button {
+        display: none;
+    }
+
+    .header__container__logo-content-label {
+        padding-left: 43px;
+        min-width: 107px;
+        min-height: 18px;
+    }
+
+    .header__container__logo-content-burger {
+        display: block;
+    }
+
+    .header__container__menu {
+        align-items: flex-start;
+        min-height: 1000px;
+        background-color: var(--burger-menu);
+        /* opacity: 0.4; */
+    }
+
+    .menu__container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        padding-top: 48px;
+        height: 100%;
+        width: 100%;
+
+        gap: 10px;
+    }
+
+}
