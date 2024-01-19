@@ -44,7 +44,7 @@
     line-height: 150%;
 }
 
-.promo__container img {
+.promo__container__decoration__photo, .promo__container__decoration {
     display: flex;
     
     width: 50%;

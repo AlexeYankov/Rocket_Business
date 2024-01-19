@@ -1,5 +1,6 @@
 const files = [
-    "./common/basket.js",
+    "./app/common/burger_menu.js",
+    "./app/common/slider.js",
     
 ];
 

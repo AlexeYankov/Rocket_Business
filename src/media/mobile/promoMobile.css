@@ -1,0 +1,14 @@
+@media screen and (max-width: 570px) {
+    .promo__container img {
+        width: 100%;
+        height: 288px;
+    }
+
+    .promo__container__description__container {
+        padding-bottom: 60px;
+    }
+
+    .promo__container__decoration {
+        max-height: 261px;
+    }
+}

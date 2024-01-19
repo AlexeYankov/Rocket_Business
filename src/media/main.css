@@ -6,5 +6,10 @@
 @import url("./desktop/footerDesktop.css");
 
 @import url("./tablet/headerTablet.css");
+@import url("./tablet/promoTablet.css");
+@import url("./tablet/checkUpTablet.css");
+@import url("./tablet/footerTablet.css");
 
 @import url("./mobile/headerMobile.css");
+@import url("./mobile/promoMobile.css");
+@import url("./mobile/checkUpMobile.css");

@@ -19,7 +19,7 @@
       <div class="header__container__logo">
       <div class="header__container__logo-container">
         <div class="header__container__logo-content">
-          <img class="header__container__logo-content-burger"src="./asserts/burger.png" alt="menu">
+          <img id="burger_icon" class="header__container__logo-content-burger" src="./asserts/burger.png" alt="menu" onclick="getMenu()">
           <img class="header__container__logo-content-label" src="./asserts/logo_colored.png" alt="logo">
 
           <div class="header__container__logo-description">
@@ -40,18 +40,19 @@
       </div>
       </div>
 
-      <div class="header__container__menu">
+      <div id="burger_menu" class="header__container__menu active">
       <ul class="header__container__logo menu__container">
         <li><a href="#">О клинике</a></li>
         <li><a href="#">Услуги</a></li>
         <li><a href="#">Специалисты</a></li>
         <li><a href="#">Цены</a></li>
         <li><a href="#">Контакты</a></li>
+        <button class="checkUp__slider__contacts__button checkUp__slider__contacts__outlined tablet__menu">Записаться на прием</button>
       </ul>
       </div>
     </header>
 
-    <!-- <section class="promo__container">
+    <section class="promo__container">
       <div class="promo__container__description">
         <div class="promo__container__description__container">
         <h1>Многопрофильная клиника для детей
@@ -64,13 +65,13 @@
         </p>
       </div>
       </div>
-      <img src="./asserts/background_white.png">
-      <img src="./asserts/background_photo.png">
-    </section> -->
+      <img class="promo__container__decoration" src="./asserts/background_white.png">
+      <img class="promo__container__decoration__photo" src="./asserts/background_photo.png">
+    </section>
 
-    <!-- <section class="checkUp__container">
+    <section class="checkUp__container">
       <div class="checkUp__wrapper">
-      <div class="checkUp__slider">
+      <div id='slider' class="checkUp__slider">
         <div class="checkUp__slider__description">
         <h3>
           check-up
@@ -92,19 +93,22 @@
       </div>
       </div>
       </div>
+      <div class="checkUp__mobile__background"></div>
       <div class="checkUp__slider__control__container">
-        <button>
+        <button onclick="sliderFn()">
           <img class="checkUp__slider__arrow__rotated" src="./asserts/left-arrow.png" alt="">
         </button>
-        <span>counter</span>
-        <button>
+        <div>
+        <span id="display">1</span>/4
+      </div>
+        <button onclick="sliderFn(true)">
           <img src="./asserts/left-arrow.png" alt="">
         </button>
       </div>
     </div>
-    </section> -->
+    </section>
 
-    <!-- <footer class="footer__container">
+    <footer class="footer__container">
       <div class="footer__wrapper">
       <img src="./asserts/logo_white.png">
 
@@ -122,8 +126,7 @@
         <img src="./asserts/telegram.png">
       </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
-  <script src="./importJSfiles.js"> </script>
-  <script src="./app/common/jsreloader.js" id="JSinject"> </script>
+  <script src="./importJSfiles.js" id="JSinject"> </script>
 </html>

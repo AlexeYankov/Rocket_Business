@@ -27,6 +27,7 @@ li {
     align-items: center;
     justify-content: center;
     background-color: var(--accent);
+    z-index: -100;
 
     width: 100%;
 }
@@ -129,6 +130,14 @@ li {
     cursor: pointer;
 }
 
+.header__container__contacts-container button:hover {
+    background-color: var(--accent-light);
+}
+
+.header__container__contacts-container button:active {
+    background-color: var(--accent-light);
+}
+
 .menu__container {
     display: flex;
     align-items: center;
@@ -144,4 +153,9 @@ li {
 
 .header__container__logo-content-burger {
     display: none;
+    cursor: pointer;
+}
+
+.tablet__menu {
+    display: none !important;
 }

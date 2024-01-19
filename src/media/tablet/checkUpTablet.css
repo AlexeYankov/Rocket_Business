@@ -1,0 +1,69 @@
+@media screen and (max-width: 1200px) {
+    .promo__container__description {
+        padding: 0 20px;
+    }
+
+    .checkUp__slider {
+    background-image: url('../../../asserts/slider/checkup_background.png');
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .checkUp__wrapper {
+        padding: 0 20px;
+        padding-top: 50px;
+        position: relative;
+
+    }
+
+    .checkUp__slider__description {
+        padding-left: 23px;
+        position: absolute;
+        padding-top: 280px;
+    }
+
+    .checkUp__slider__description h3 {
+        font-size: 26px;
+    }
+    
+    .checkUp__slider__description strong {
+        font-size: 14px;
+    }
+
+    .checkUp__options {
+        padding-top: 12px;
+        padding-bottom: 17px;
+    }
+
+    .checkUp__option {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+    }
+
+    .checkUp__slider__price {
+        font-size: 18px;
+    }
+
+    .checkUp__slider__price-old {
+        padding-left: 10px;
+
+        font-size: 14px;
+    }
+
+    .checkUp__slider {
+        min-height: 260px;
+        background-image: url('../../../asserts/slider/doctor-working-table.png');
+    }
+
+    .checkUp__mobile__background {
+        display: block;
+        width: 100%;
+        height: 367px;
+
+        background-image: url('../../../asserts/mobile_background.png');
+    }
+
+    /* . */
+}

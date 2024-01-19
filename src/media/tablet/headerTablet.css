@@ -24,8 +24,15 @@
     .header__container__menu {
         align-items: flex-start;
         min-height: 1000px;
-        background-color: var(--burger-menu);
-        /* opacity: 0.4; */
+        top: 0;
+        margin-top: 60px;
+        position: fixed;
+
+        background: rgba(69, 146, 127, 0.90);
+
+        backdrop-filter: blur(2px);
+
+        z-index: -10;
     }
 
     .menu__container {
@@ -38,6 +45,50 @@
         width: 100%;
 
         gap: 10px;
+        line-height: 24px;
+        
+        /* transition: 0.4s; */
+        /* transform: translateX(0); */
+    }
+
+    .active {
+        opacity: 0;
+        pointer-events: none;
+        
+        /* transform: translateX(-100%); */
+        /* transition: 0.4s ease-in-out; */
+    }
+
+    .logo__icon {
+        content: url('../../../asserts/burger_close.png');
+        padding-right: 8px;
+    }
+
+    .tablet__menu {
+        display: block !important;
+        width: auto;
+
+        background-color: #F6F6F6;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21px;
+
+        border: none;
+        color: #1FA181;
+
+        margin-top: 40px;
+    }
+
+    .tablet__menu:hover {
+        background-color: var(--light-green);
+        color: white;
+        transition: 0.2s ease-in-out
+    }
+
+    .tablet__menu:active {
+        background-color: var(--accent-light);
     }
 
 }

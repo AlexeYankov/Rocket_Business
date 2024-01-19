@@ -1,0 +1,28 @@
+@media screen and (max-width: 570px) {
+    .checkUp__slider {
+        min-height: 170px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .checkUp__slider__description {
+        padding-top: 190px;
+    }
+
+    .checkUp__slider__contacts button {
+        width: 137px;
+    }
+
+    .checkUp__option {
+        line-height: 185%;
+    }
+
+    li:nth-last-child(1) {
+        width: 250px;
+        align-items: flex-start;
+    }
+
+    .checkUp__mobile__background {
+        border-radius: 0 0 5px 5px;
+    }
+       
+ }

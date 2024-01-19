@@ -17,10 +17,15 @@
 }
 
 .checkUp__slider {
-    background-image: url('../../../asserts/checkup_background.png');
-    object-fit: cover;
-    height: 440px;
-    max-width: 1140px;
+    display: flex;
+
+    background-image: url('../../../asserts/slider/checkup_background.png');
+    min-height: 440px;
+    width: 1140px;
+    max-width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
 }
 
 .checkUp__slider__description {
@@ -124,6 +129,7 @@
     padding-top: 34px;
 
     gap: 36px;
+    color: #C0C0C0;
 }
 
 .checkUp__slider__control__container button {
@@ -142,4 +148,8 @@
 
 .checkUp__slider__control__container button:hover img {
     content: url('../../../asserts/left-arrow-solid.png');
+}
+
+.checkUp__slider__control__container span {
+    color: #364844;
 }
