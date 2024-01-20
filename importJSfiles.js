@@ -2,7 +2,6 @@ const files = [
     "./app/common/burger_menu.js",
     "./app/common/slider.js",
     "./app/common/contact_form.js",
-    
 ];
 
 function importFiles(files) {
