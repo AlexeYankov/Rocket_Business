@@ -11,15 +11,15 @@ if(isset($_POST['send'])) {
 
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
-    $mail->SMMTPAuth = true;
+    $mail->SMTPAuth = true;
     $mail->Username = 'rocket.business.test.61@gmail.com';
     $mail->Password = 'agjwwhusutfxtclv';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setForm('rocket.business.test.61@gmail.com');
+    $mail->setFrom('rocket.business.test.61@gmail.com');
 
-    $mail->addAdress($_POST["email"]);
+    $mail->addAddress($_POST["email"]);
 
     $mail->isHTML(true);
 
@@ -33,10 +33,10 @@ if(isset($_POST['send'])) {
     echo
     "
     <script>
-    alert('Форма отправлена. Мы свяжемся с Вами в ближайшее время')
+    alert('Форма отправлена. Мы свяжемся с Вами в ближайшее время');
 
-    document.location="/"
+    document.location.href = 'index.html'
     </script>
-    "
+    ";
 }
 ?>

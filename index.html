@@ -33,8 +33,8 @@
         </div>
 
         <div class="header__container__contacts-container">
-          <label for="call">+7(863) 000 00 00</label>
-          <button id="call" onclick="getForm()">Записаться на прием</button>
+          <label onclick="getForm()">+7(863) 000 00 00</label>
+          <button onclick="getForm()">Записаться на прием</button>
           <span>Ростов-на-Дону</span>
         </div>
       </div>
@@ -128,7 +128,7 @@
       </div>
     </footer>
     <div class="contact__form" id="form">
-        <form method="post">
+        <form method="post" action="send.php">
           <img src="./asserts/icon_close.svg" alt="" onclick="getForm()">
           <label for="tel">Tel. </label><input name="tel" id="tel" type="number" placeholder="+7"><br>
           <label for="tel">Name </label><input name="name" type="name"><br>
