@@ -1,5 +1,6 @@
 async function sendFrom(event) {
     alert('is sended')
+    console.log(1)
     event.preventDefault()
     const tel = document.getElementById('tel').value
     const email = document.getElementById('email').value
