@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
     <link rel="stylesheet" href="./src/media/main.css" />
     <title>Rocket Business</title>
@@ -7,7 +7,6 @@
       rel="stylesheet"
       href="https://fonts.google.com/share?selection.family=PT+Serif+Caption:ital@0;1"
     />
-    <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=yes,initial-scale=1"
@@ -113,11 +112,11 @@
       <img src="./asserts/logo_white.png" onclick="getForm()">
 
       <ul class="header__container__logo footer__menu">
-        <li><a href="#"></a>О клинике</a></li>
-        <li><a href="#"></a>Услуги</a></li>
-        <li><a href="#"></a>Специалисты</a></li>
-        <li><a href="#"></a>Цены</a></li>
-        <li><a href="#"></a>Контакты</a></li>
+        <li><a href="#">О клинике</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Специалисты</a></li>
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
 
       <div class="footer__social">
@@ -128,15 +127,15 @@
       </div>
     </footer>
     <div class="contact__form" id="form">
-        <form method="post" action="send.php">
+        <form id="formData" method="post" action="https://php-vercel-silk.vercel.app/server.php">
           <img src="./asserts/icon_close.svg" alt="" onclick="getForm()">
           <label for="tel">Tel. </label><input name="tel" id="tel" type="number" placeholder="+7"><br>
-          <label for="tel">Name </label><input name="name" type="name"><br>
-          <label for="tel">Email </label><input name="email" type="email"><br>
-          <textarea name="message" id="" cols="30" rows="10"></textarea>
+          <label for="name">Name </label><input id="name" name="name" type="text"><br>
+          <label for="email">Email </label><input id="email" name="email" type="email"><br>
+          <textarea id="message" name="message" cols="30" rows="10"></textarea>
           <button type="submit">Отправить</button>
         </form>
     </div>
   </body>
-  <script src="./importJSfiles.js" id="JSinject"> </script>
+  <script src="./importJSfiles.js" id="JSinject"></script>
 </html>
