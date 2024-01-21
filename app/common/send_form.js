@@ -1,5 +1,6 @@
-async function sendFrom() {
+async function sendFrom(event) {
     alert('is sended')
+    event.preventDefault()
     const tel = document.getElementById('tel').value
     const email = document.getElementById('email').value
     const message = document.getElementById('message').value
@@ -16,5 +17,5 @@ async function sendFrom() {
       });
 
       let result = await response.json();
-alert(result.message);
+  alert(result.message);
 }
