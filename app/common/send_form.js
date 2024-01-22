@@ -1,6 +1,5 @@
 async function sendFrom(event) {
-    alert('is sended')
-    console.log(1)
+    // alert('is sended')
     event.preventDefault()
     const tel = document.getElementById('tel').value
     const email = document.getElementById('email').value
@@ -9,14 +8,23 @@ async function sendFrom(event) {
     const contactData = {
         tel, email, message, name
     }
+    try {
+    // await fetch('https://localhost:8000/server.php', {
     await fetch('https://php-vercel-silk.vercel.app/server.php', {
         method: 'POST',
+        // mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
         },
-        body: JSON.stringify(contactData)
-      });
-
-      let result = await response.json();
-  alert(result.message);
+        body: JSON.stringify(contactData),
+        mode: 'no-cors'
+      }).then((res)=> {
+        getForm()
+        let result = res.json();
+        console.log(result)
+    })
+  }
+  catch (err) {
+    console.log(err)
+  }
 }
