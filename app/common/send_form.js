@@ -9,15 +9,14 @@ async function sendFrom(event) {
         tel, email, message, name
     }
     try {
-    // await fetch('https://localhost:8000/server.php', {
-    await fetch('https://php-vercel-silk.vercel.app/server.php', {
+    await fetch('https://localhost:8000/server.php', {
+    // await fetch('https://php-vercel-silk.vercel.app/server.php', {
         method: 'POST',
         // mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify(contactData),
-        mode: 'no-cors'
       }).then((res)=> {
         getForm()
         let result = res.json();
